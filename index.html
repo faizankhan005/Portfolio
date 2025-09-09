@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faizan Khan - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-3">
+            <!-- Small DP -->
+            <img
+              src="faizan.jpg"
+              alt="Faizan Khan"
+              class="w-10 h-10 rounded-full border-2 border-purple-600"
+            />
+
+            <!-- Name -->
+            <div class="text-2xl font-bold text-purple-600">Faizan Khan</div>
+          </div>
+
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="text-gray-700 hover:text-purple-600 transition duration-300"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-purple-600 transition duration-300"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-700 hover:text-purple-600 transition duration-300"
+              >Skills</a
+            >
+            <a
+              href="#portfolio"
+              class="text-gray-700 hover:text-purple-600 transition duration-300"
+              >Portfolio</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-purple-600 transition duration-300"
+              >Contact</a
+            >
+          </div>
+          <div class="flex space-x-3">
+            <button
+              onclick="openModal('loginModal')"
+              class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition duration-300"
+            >
+              Login
+            </button>
+            <button
+              onclick="openModal('registerModal')"
+              class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white pt-24 pb-16">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="py-20">
+          <h1 class="text-5xl font-bold mb-6">Faizan Khan</h1>
+          <h2 class="text-2xl mb-8">Full Stack Developer</h2>
+          <p class="text-xl mb-8 max-w-2xl mx-auto">
+            Passionate Computer Science Engineering student specializing in
+            Frontend, Backend, and Full Stack Development
+          </p>
+          <div class="flex justify-center space-x-4">
+            <!-- Download CV -->
+            <a
+              href="frontend resume.pdf"
+              download
+              class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 flex items-center"
+            >
+              <i class="fas fa-download mr-2"></i> Download CV
+            </a>
+
+            <!-- WhatsApp Contact -->
+            <a
+              href="https://wa.me/919671636548?text=Hello%20Faizan!%20I%20am%20interested%20in%20your%20profile."
+              target="_blank"
+              class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition duration-300 flex items-center"
+            >
+              <i class="fas fa-envelope mr-2"></i> Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+          <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div
+            class="w-80 h-80 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full mx-auto flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="faizan.jpg"
+              alt="Profile Photo"
+              class="w-full h-full object-cover rounded-full"
+            />
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">
+              Computer Science Engineering Student
+            </h3>
+            <div class="space-y-4 text-gray-600">
+              <p class="flex items-center">
+                <i class="fas fa-graduation-cap text-purple-600 mr-3"></i
+                ><strong>Education:</strong> B.Tech in Computer Science &
+                Engineering
+              </p>
+              <p class="flex items-center">
+                <i class="fas fa-university text-purple-600 mr-3"></i
+                ><strong>University: </strong> Ch Devi Lal University
+              </p>
+              <p class="flex items-center">
+                <i class="fas fa-code text-purple-600 mr-3"></i
+                ><strong>Specialization:</strong> Full Stack Development
+              </p>
+              <p class="flex items-center">
+                <i class="fas fa-laptop-code text-purple-600 mr-3"></i
+                ><strong>Focus Areas:</strong> Frontend, Backend & Database
+                Management
+              </p>
+            </div>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+              I'm a passionate full-stack developer with expertise in modern web
+              technologies. Currently pursuing my B.Tech in Computer Science
+              Engineering, I love creating efficient, scalable web applications
+              and constantly learning new technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">My Skills</h2>
+          <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+        </div>
+
+        <!-- Frontend Skills -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">
+            Frontend Development
+          </h3>
+          <div class="grid md:grid-cols-4 gap-6">
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fab fa-html5 text-orange-500 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">HTML5</h4>
+            </div>
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fab fa-css3-alt text-blue-500 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">CSS3</h4>
+            </div>
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fab fa-js text-yellow-500 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">JavaScript</h4>
+            </div>
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fab fa-react text-blue-400 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">React JS</h4>
+            </div>
+          </div>
+          <div class="flex justify-center mt-6">
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fas fa-wind text-teal-500 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">Tailwind CSS</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">
+            Backend Development
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fab fa-node-js text-green-500 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">Node.js</h4>
+            </div>
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fas fa-server text-gray-600 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">Express.js</h4>
+            </div>
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fas fa-code text-purple-600 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">RESTful APIs</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database Skills -->
+        <div>
+          <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">
+            Database Management
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fas fa-leaf text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">MongoDB</h4>
+            </div>
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fas fa-database text-blue-600 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">SQL</h4>
+            </div>
+            <div
+              class="skill-card bg-white p-6 rounded-lg shadow-md text-center"
+            >
+              <i class="fas fa-cogs text-gray-600 text-4xl mb-4"></i>
+              <h4 class="text-lg font-semibold">Database Design</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">Portfolio</h2>
+          <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+          <p class="text-gray-600 mt-4">
+            Here are some of my recent projects showcasing my full-stack
+            development skills
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-purple-400 to-blue-500 flex items-center justify-center"
+            >
+              <i class="fas fa-shopping-cart text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+              <p class="text-gray-600 mb-4">
+                Full-stack e-commerce solution with React, Node.js, and MongoDB
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm"
+                  >React</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm"
+                  >Node.js</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm"
+                  >MongoDB</span
+                >
+              </div>
+              <button
+                class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition duration-300"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center"
+            >
+              <i class="fas fa-tasks text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+              <p class="text-gray-600 mb-4">
+                Responsive task management application with real-time updates
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm"
+                  >React</span
+                >
+                <span
+                  class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-teal-100 text-teal-800 px-2 py-1 rounded text-sm"
+                  >Tailwind</span
+                >
+              </div>
+              <button
+                class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition duration-300"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center"
+            >
+              <i class="fas fa-chart-bar text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Analytics Dashboard</h3>
+              <p class="text-gray-600 mb-4">
+                Data visualization dashboard with interactive charts and graphs
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm"
+                  >React</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm"
+                  >Express</span
+                >
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm"
+                  >SQL</span
+                >
+              </div>
+              <button
+                class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition duration-300"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+          <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+          <p class="text-gray-600 mt-4">
+            Let's discuss your next project or collaboration opportunity
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">
+              Contact Information
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <i class="fas fa-envelope text-purple-600 text-xl mr-4"></i>
+                <span>mrfaizankhan005@gmail.com</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-phone text-purple-600 text-xl mr-4"></i>
+                <span>+91 9671636548</span>
+              </div>
+              <div class="flex items-center">
+                <i
+                  class="fas fa-map-marker-alt text-purple-600 text-xl mr-4"
+                ></i>
+                <span>Haryana, India</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fab fa-linkedin text-purple-600 text-xl mr-4"></i>
+                <span>linkedin.com/in/faizan05</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fab fa-github text-purple-600 text-xl mr-4"></i>
+                <span>github.com/faizan005</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <form id="contactForm" class="space-y-4">
+              <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                required
+              />
+              <input
+                type="text"
+                id="subject"
+                placeholder="Subject"
+                class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                required
+              />
+              <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+                class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition duration-300"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p>&copy; 2024 Faizan Khan. All rights reserved.</p>
+        <p class="mt-2 text-gray-400">
+          Full Stack Developer | Computer Science Engineering
+        </p>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-800">Login</h2>
+          <button
+            onclick="closeModal('loginModal')"
+            class="text-gray-500 hover:text-gray-700"
+          >
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition duration-300"
+          >
+            Login
+          </button>
+          <p class="text-center mt-4 text-sm text-gray-600">
+            Don't have an account?
+            <button
+              type="button"
+              onclick="closeModal('loginModal'); openModal('registerModal')"
+              class="text-purple-600 hover:underline"
+            >
+              Register here
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+      <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-800">Register</h2>
+          <button
+            onclick="closeModal('registerModal')"
+            class="text-gray-500 hover:text-gray-700"
+          >
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+              placeholder="Enter your full name"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+              placeholder="Create a password"
+            />
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+              placeholder="Confirm your password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-700 transition duration-300"
+          >
+            Register
+          </button>
+          <p class="text-center mt-4 text-sm text-gray-600">
+            Already have an account?
+            <button
+              type="button"
+              onclick="closeModal('registerModal'); openModal('loginModal')"
+              class="text-purple-600 hover:underline"
+            >
+              Login here
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script>
+      
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form values
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let subject = document.getElementById("subject").value;
+          let message = document.getElementById("message").value;
+
+          // WhatsApp number (with country code, no + or spaces)
+          let phoneNumber = "919671636548"; // your number
+
+          // Format message
+          let whatsappMessage = `New Message from Portfolio Website:%0A
+👤 Name: ${name}%0A
+📧 Email: ${email}%0A
+📝 Subject: ${subject}%0A
+💬 Message: ${message}`;
+
+          // Open WhatsApp
+          let url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+          window.open(url, "_blank");
+        });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
